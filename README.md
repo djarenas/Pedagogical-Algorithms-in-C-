@@ -1,2 +1,2 @@
-# Pedagogical-Algorithms-in-C-
+# PedagogicalAlgorithmsInC++
 My versions of useful functions and algorithms with C++
