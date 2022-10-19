@@ -25,20 +25,15 @@ int VecFunc::findVectorMax(vector<int> &A) {
         maxe = *(it) > maxe ? *(it) : maxe;
     }
     return maxe;
-
 }
 
 //Purpose: Find minimum element of vector of integers.
 int VecFunc::findVectorMin(vector<int> &A) {
-    
     int mini = A[0];
-    
     for (vector<int>::iterator it = A.begin(); it < A.end(); it++) {
         mini = *(it) < mini ? *(it) : mini;
     }
-
     return mini;
-
 }
 
 //Purpose: Takes a vector of integers and swaps its x and y elements.
@@ -61,9 +56,7 @@ void VecFunc::reverseVector (vector<int> &A) {
 //Purpose: Vector of integers --> Sorted vector.
 //Bubble algorithm. O(n^2).
 void VecFunc::sortbyBubble (vector<int> &A) {
-
     int n = A.size();
-    
     //For each ith element
     for (int i = 0; i < n - 1; i++){
         //Swap from one to the next until the highest is at the end of the array
@@ -72,19 +65,15 @@ void VecFunc::sortbyBubble (vector<int> &A) {
                 swapElem(A, j, j+1);
             }
         }
-        //Move to i + 1
     }
 }
 
 //Purpose: Vector of integers --> Sorted vector.
 //Bubble algorithm. O(n^2). Best case O(n) if already sorted.
-void VecFunc::sortByOptimizedBubble(vector<int> &A) {
-    
+void VecFunc::sortByOptimizedBubble(vector<int> &A) { 
     int n = A.size();
-
     //For each ith element
     for (int i = 0; i < n - 1; i++){ 
-
         //VecFunc::printVect(A); A good place to print the vector to see how the algorithm is working 
 
         //Assume that things after the ith element are indeed sorted
@@ -110,12 +99,10 @@ void VecFunc::sortByOptimizedBubble(vector<int> &A) {
 //Purpose: Vector of integers --> Sorted vector.
 //Sorty by Insertion. ~O(n^2).
 void VecFunc::sortByInsert(vector<int> &A) {
-    
     int n = A.size();
     int i = 1; //Delineates between sorted and not-sorted.
     
     while (i < n){
-        
         int temp = A[i]; //Keep track of this element. The first in the non-sorted.
 
         //Begin from the last element in the sorted.
@@ -130,14 +117,12 @@ void VecFunc::sortByInsert(vector<int> &A) {
         
         //Move the sorted delineator to the right
         i++;
-        
     }
 }
 
 //Purpose: Vector of integers --> sorted vectors. Histogram method.
 //O(n + k). k is length of the histogram vector (max - min + 1).
 void VecFunc::sortbyCounting(vector<int> &A) {
-
     int n = A.size();
 
     //Build the histogram vector with default values of zero.
@@ -175,7 +160,7 @@ void VecFunc::sortbyCounting(vector<int> &A) {
 //This problem is presented as the Chopsticks problem in Prateek Narang's Data Structures & 
 //algorithms for C++.
 int VecFunc::calcPairDifferencesLessThanX (vector<int> A, int x) {
-    
+    //This algorithm requires the vector to be sorted.
     sort(A.begin(), A.end());
     
     int n = A.size();
@@ -183,18 +168,17 @@ int VecFunc::calcPairDifferencesLessThanX (vector<int> A, int x) {
     
     int i = 1;
     while (i < n){
-        //If you find two adjacent elements for which the difference is less than x
+        //If you find two adjacent elements for which the difference is less than x.
         if (A[i] - A[i-1] <= x){
-            //Add one more pair to the result
+            //Add one more pair to the result.
             pairs++;   
-            //Move two elements since an element cannot pair twice
+            //Move two elements since an element cannot pair twice.
             i = i + 2;
         }
         //If not, go to next element.
         else {
             i++;
         }
-
     }
     return  pairs;
 }
@@ -221,7 +205,6 @@ pair<int,int> VecFunc::findClosestSumPair(vector<int> vect, int x) {
     //Allow L and R elements to move in their respective directions 
     //right up until they are next to each other (l < r).
     while (l < r) {
- 
         //Calculate the difference between the two elements sum and the target.
         int delta = (vect[r]+vect[l])-x; 
         
@@ -245,10 +228,7 @@ pair<int,int> VecFunc::findClosestSumPair(vector<int> vect, int x) {
         if (delta < 0) {
             l++;
         }
-
     }
-    
     //l_ans and r_ans were keeping track of where the mindelta was found
     return std::make_pair(vect[l_ans],vect[r_ans]);
-    
 }
