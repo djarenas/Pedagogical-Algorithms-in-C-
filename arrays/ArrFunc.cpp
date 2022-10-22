@@ -10,7 +10,7 @@ void ArrFunc::printArray(int arr[], int n) {
 }
 
 //Purpose: Return the sum of the array.
-int sumArray(int arr[], int n) {
+int ArrFunc::sumArray(int arr[], int n) {
     int sum = 0;
     for (int i = 0; i < n; i++){
         sum = arr[i] + sum;
