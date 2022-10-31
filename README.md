@@ -12,7 +12,7 @@ Print vectors; find maximum/minimum of the elements; swap elements; reverse vect
 sort by bubble algorithm; by optimized bubble algorithm; by insertion; by counting.  
 Calculate the sum of two pairs closest to a target number; calculate how many elements you can pair together with a difference less than a target, etc... 
 
-Vectors2D
+Vectors2D  
 Print 2D vectors; print in spiral form; print as reverse wave.  
 Check dimensionality; calculate the sum of a subportion of the 2D vector; search a sorted 2D vector.  
 Create a 2D vector Pascal triangle.  
