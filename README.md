@@ -1,4 +1,4 @@
-# PedagogicalAlgorithmsInCPlusPlus  
+# PedagogicalFunctionsInCPlusPlus  
 A growing list of C++ libraries that contain my solutions to algorithms that were helpful for learning C++ and programming in general.  
 Where appropriate I comment functions that were written with big help from different courses or web resources.  
 
