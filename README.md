@@ -21,7 +21,7 @@ Rotate a symmetric 2D vector by a variable amount.
 Compare cartesian points (as pair of integers); calculate distance between points; calculate distance to origin; compare distance to origin. Build a grid.  
 Defense kingdom: Calculate the maximum undefended area of a variable-size chess board with a variable amount of rooks on it. 
 
-Recursion
+Recursion  
 Recursively move from x1 to x2; calculate factorial of n; calculate Fibonacci element n; recursively calculate power, brute and optimized.    
 Print recursively from 0 to n; recursively search an array and find the elements.
 Tiles problem (1xM tiles in an NxM board); Friend's party problem; Calculate number of different paths from corner to corner in an NxM grid.
