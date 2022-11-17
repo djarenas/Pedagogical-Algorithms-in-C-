@@ -1,25 +1,40 @@
 #include <algorithm>
-#include <array>
+#include <bitset>
+#include <cstdio>
 #include <iostream>
 #include <cmath>
 #include <string>
 #include <vector>
 
 using std::cout;
-using std::endl;
+using std::cin;
+using std::make_pair;
+using std::pair;
 using std::string;
 using std::vector;
+using std::endl;
 
-void printTwoDVector(vector<vector<int>> &vect);
-vector<vector<int>> buildBoard (int n);
-bool checkHorizontalKills(vector<vector<int>> &board, int x, int y);
-bool checkVerticalKills(vector<vector<int>> &board, int x, int y);
-bool checkDiagonalKills(vector<vector<int>> &board, int x, int y);
-bool checkQueenKills (vector<vector<int>> &board, int x, int y);
-bool solveNQueensByRow (vector<vector<int>> &board, int i, int j, int &sum);
-bool checkSudokuRowColumn (vector<vector<int>> &board, int x, int i, int j);
-bool checkSudokuLocal (vector<vector<int>> &board, int x, int i, int j);
-vector<int> findNextEmptyElement (vector<vector<int>> &board, int i, int j);
-void solveSudokuBoard(vector<vector<int>> &board, int i, int j, vector<vector<vector<int>>> &solutions);
-void printCharArray (char *c, int n);
-void buildStringPermutations (char *input, int n, int i, vector<string> &voutput);
+void printVect(vector<int> &A);
+void printVect(vector<string> &A);
+void goHome(int x1, int x2);
+unsigned long long calcFactorial(int n);
+int calcFibonacci(int n);
+long long calcPowerRecursively(int x, int p);
+long long calcPowerOptimized (int x, int p);
+void printRecursively(int n, bool increasing);
+int findFirstElemRecursively (vector<int> const &vec, int target, int i);
+vector<int> findAllRecursively (vector<int> const &vec, int target, int i);
+int calcTilingPermutations(int n, int m);
+int calcFriendPairingParty(int n);
+int calcGridPaths(int n, int m);
+vector<string> addZerosToStrings( vector<string> vec);
+vector<string> addOnesToStrings(vector<string> vec);
+vector<string> findBinaryPermutNoConsecutive1 (int n);
+vector<int> mergeTwoSorted(vector<int> a, vector<int> b);
+vector<int> sortByMergePassValue(vector<int> a);
+void mergeTwoSorted (vector<int> &v, int s, int e);
+void sortByMerge (vector<int> &v, int s, int e);
+void sortByMerge (vector<int> &v);
+int partition (vector<int> &v, int s, int e);
+void quickSort (vector<int> &v, int s, int e);
+void quickSort (vector<int> &v);
