@@ -25,5 +25,5 @@ Recursion
 Recursively move from x1 to x2; calculate factorial of n; calculate Fibonacci element n; recursively calculate power, brute and optimized.    
 Print recursively from 0 to n; recursively search an array and find the elements.
 Tiles problem (1xM tiles in an NxM board); Friend's party problem; Calculate number of different paths from corner to corner in an NxM grid.
-Find possible binary permutations of size n that do not have consecutive 1s.
+Find possible binary permutations of size n that do not have consecutive 1s.  
 Merge sort; quick sort.
