@@ -3,7 +3,7 @@
 
 #include "Node.h"
 
-//List class: Stores a pointer to a head node and a tail node. 
+//List class: Stores a pointer to a head node and a tail node.
 //Node's architecture is such that each node holds its own data and the address to the next node.
 template <typename T>
 class LinkList {
@@ -34,26 +34,29 @@ class LinkList {
     
     //METHODS
 
-    //Purpose: Print the Linked List. Starts from the head.
+    //Purpose: Print the LinkList object starting from the head.
     void printLinkList() {
-        //Special case: The linked list is empty.
+        //Special case: The link-list is empty.
         if (head == nullptr) {
             cout << "The linked list is empty." << endl;
             return;
         }
         
-        //A temporary "current node" pointer to iterate through the linkedlist.
+        //A temporary "current node" pointer to iterate through the linked list.
         Node<T>* cnode = head; 
         
+        //Before you hit the final node...
         while (cnode != nullptr) {
             cout << cnode->data << "->";
-            cnode = cnode->next; //Move to next node.
+            
+            //Move to next node.
+            cnode = cnode->next;
         }
         
         cout << endl;
     }
 
-    //Purpose: Add a new element as the head of the Linked List.
+    //Purpose: Add a new element at the head position of the linked list.
     void push_front(T data) {
         //Special case: The list is currently empty -> This element becomes the head and tail.
         if (head == nullptr) {
@@ -75,7 +78,7 @@ class LinkList {
         //Make the next value of this new node point to the current head node.
         n->next = head; 
 
-        //Update his new node as the new head.
+        //Update this new node as the new head.
         head = n;
     }
 
@@ -131,7 +134,7 @@ class LinkList {
         cnode->next = n; 
     }
 
-    //Purpose: Delete first element of a Linked List object.
+    //Purpose: Delete first element of a Link-List object.
     void pop_front() {
 
         //If there are no elements in the linked list.
@@ -139,7 +142,7 @@ class LinkList {
             return;
         }
 
-        //Make a temporary node where the current head is. So you know where to come back to.
+        //Make a temporary node where the current head is. So you know where to delete.
         Node<T>* temp = head;
 
         //Make the new head the next link after the old head.
@@ -185,7 +188,7 @@ class LinkList {
 
     //Purpose: Remove specific element of the linked list.
     void removeSpecificIndex(int position) {
-        //No list, nothing to remove,
+        //No list, nothing to remove.
         if (head == nullptr) {
             return;
         }
@@ -196,7 +199,7 @@ class LinkList {
             return;
         }
 
-        //Move from beginning to the element previous to the position you want
+        //Move from beginning to the element right before the position you want,
         Node<T>* cnode = head; 
         for (int i = 1; i < position; i++) {
             cnode = cnode->next;
@@ -221,7 +224,7 @@ class LinkList {
     //Purpose: Return the kth last element.
     //Last element is k = 1; penultimate is k = 2;....
     int getKthLastElement(int k) {
-        
+        //Error case: Invalid k.
         if (k < 1) {
             cout << "Error in getKthLastElement. K must be equal or more than one." << endl;
             return 0;
@@ -230,7 +233,7 @@ class LinkList {
         //Starting from the head: Move Kth steps.
         Node<T>* cnode = head;
         for (int i = 0; i < k; i++) {
-            //Check that more steps are actually possible.
+            //Check that k number of steps are actually possible.
             if (cnode->next == nullptr) {
                 cout << "Error in getKthLastElement. The linked list is not long enough to get a kth last element." << endl;
                 return 0;
@@ -239,7 +242,7 @@ class LinkList {
             cnode = cnode->next;
         }
 
-        //Save a temporary node at the head. This now lags kth steps behind the current node "cnode".
+        //Save a temporary node at the head. This now lags kth steps behind the "cnode".
         Node<T>* temp = head;
 
         //Now move both until cnode hits the end.
@@ -251,7 +254,7 @@ class LinkList {
         return (temp->data);
     }
 
-    //Purpose: Search the linked list for a key. 
+    //Purpose: Search the  for a key. 
     //Returns the earliest index where found. Returns -1 if not found.
     int linearSearch(T key) {
         //Declare a current node and start at the head.
@@ -259,7 +262,6 @@ class LinkList {
 
         int i = 0; //A counter for keeping track of how many elements you have searched
         
-        //Move accross the linked list until you hit a null pointer.
         while (cnode != nullptr) {
             if (cnode->data == key) {
                 return i;
@@ -304,7 +306,7 @@ class LinkList {
             temp_right = temp_right->next;
         }
         
-        //For last element
+        //For last element.
         cnode->next = temp_left;
         head = cnode;
     }
