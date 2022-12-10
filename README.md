@@ -29,4 +29,10 @@ Find possible binary permutations of size n that do not have consecutive 1s.
 Merge sort; quick sort.
 
 Linked-Lists  
-Custom linked lists class. Class Methods: Insert element in O(1). Remove the head or tail in O(1). Search for an element. Insert an element at a specific position. Delete an element at a specific position. Get the kth last element by iterating through only once.
+Custom Node class.  
+Custom Linked-List class. Class Methods: Insert element in O(1). Remove the head or tail in O(1). Search for an element. Insert an element at a specific position. Delete an element at a specific position. Get the kth last element by iterating through only once. Reverse the linked-list.  
+Custom Stack Class, implemented as a linked list. Class Methods: Push in O(1), remove top element O(1). Place an element in the bottom of the stack.  
+Custom Queue Class, implemented as a linked list. Push and pop in O(1). 
+
+
+
