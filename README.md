@@ -27,3 +27,6 @@ Print recursively from 0 to n; recursively search an array and find the elements
 Tiles problem (1xM tiles in an NxM board); Friend's party problem; Calculate number of different paths from corner to corner in an NxM grid.
 Find possible binary permutations of size n that do not have consecutive 1s.  
 Merge sort; quick sort.
+
+Linked-Lists  
+Custom linked lists class. Class Methods: Insert element in O(1). Remove the head or tail in O(1). Search for an element. Insert an element at a specific position. Delete an element at a specific position. Get the kth last element by iterating through only once.
