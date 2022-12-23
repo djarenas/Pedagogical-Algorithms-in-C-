@@ -34,5 +34,7 @@ Custom Linked-List class. Class Methods: Insert element in O(1). Remove the head
 Custom Stack Class, implemented as a linked list. Class Methods: Push in O(1), remove top element O(1). Place an element in the bottom of the stack.  
 Custom Queue Class, implemented as a linked list. Push and pop in O(1). 
 
-
-
+Binary-Trees  
+Custom Binary-Tree-Node class.  
+Custom Binary-Tree class implemented as linked lists of binary-tree nodes. Class Methods: Build the tree using an input vector (pre-order arranged). Print an existing tree in either: pre-order, in-order, post-order, or level-order. Search if an element is inside the tree. Read an existing tree and save elements into a vector. Search if an element is inside the tree (breadth-first search or depth-first search); count how many instances an element is found. Rotate (left or right) the root or a specific element.  
+Custom Binary-Search Tree class inheriting from the Binary-Tree Class. Polymorphism in building the binary search tree using an input vector. Insert a new element into the binary search tree by keeping the node's relationships valid. Find max, min values. Remove a node, whether it is a leaf, has a single child, or has two children. 
