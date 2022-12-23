@@ -105,9 +105,6 @@ int BinarySearchTreeLL::findSmallestValue(BTNode* cnode) {
     return cnode->data;
 }
 
-
-
-
 //Purpose: Finds and removes the farthest node containing a particular data and removes the node.
 //Function overloaded to start from a specific node.
 BTNode* BinarySearchTreeLL::remove(BTNode* cnode, int target) {
