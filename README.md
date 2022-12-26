@@ -38,3 +38,13 @@ Binary-Trees
 Custom Binary-Tree-Node class.  
 Custom Binary-Tree class implemented as linked lists of binary-tree nodes. Class Methods: Build the tree using an input vector (pre-order arranged). Print an existing tree in either: pre-order, in-order, post-order, or level-order. Search if an element is inside the tree. Read an existing tree and save elements into a vector. Search if an element is inside the tree (breadth-first search or depth-first search); count how many instances an element is found. Rotate (left or right) the root or a specific element.  
 Custom Binary-Search Tree class inheriting from the Binary-Tree Class. Polymorphism in building the binary search tree using an input vector. Insert a new element into the binary search tree by keeping the node's relationships valid. Find max, min values. Remove a node, whether it is a leaf, has a single child, or has two children. 
+
+Heaps  
+Custom Heap class implemented as a vector conceptualized as a complete binary tree. Class Methods: Printing the heap, level by level. Sift up; sift down (heapify); insert a new element; remove top element; find and remove specific element (closest to the top).  
+
+Hash Tables  
+Custom Hash class: Custom hash function, hash table, and linked-lists for collision handling. Rehashing function when the table exceeds a custom load factor. 
+Class Methods:  Search a key and return value in O(1)-average; insert a new element in O(1); erase an element in O(1)-average; overload the [] operator.  
+
+Tries  
+Custom Trie class implemented as a tree of custom nodes. Methods: Search in O(key-length); insert a new word O(key-length).  
