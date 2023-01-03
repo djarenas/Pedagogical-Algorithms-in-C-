@@ -48,3 +48,6 @@ Class Methods:  Search a key and return value in O(1)-average; insert a new elem
 
 Tries  
 Custom Trie class implemented as a tree of custom nodes. Methods: Search in O(key-length); insert a new word O(key-length).  
+
+Graphs  
+Custom Node class. Custom Graph class with option of undirected or directed. Methods: Print the graph. Add a node in O(1)-average; add an edge in O(1)-average; check if node or edge exists; remove node or edge in O(1)-average; traverse the graph in breadth-first-search or depth-first-search.  
